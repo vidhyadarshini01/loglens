@@ -1,0 +1,26 @@
+# LogLens Troubleshooting Runbook
+
+## Authentication failed for user
+- **Likely cause:** expired password, locked account, or SSO token issue
+- **Steps:** confirm the user ID, reset the password or session, retest
+- **Escalate if:** multiple users are affected at the same time
+
+## Connection timed out
+- **Likely cause:** network latency, firewall or VPN problem, server overload
+- **Steps:** ping and DNS check, test without VPN, retry
+- **Escalate if:** it fails on more than one network
+
+## PDF processing failed
+- **Likely cause:** corrupt or unsupported file, outdated reader version
+- **Steps:** try another PDF, update the app, check file permissions
+- **Escalate if:** it happens with every file
+
+## License expired
+- **Likely cause:** entitlement lapsed or was not renewed
+- **Steps:** verify the account entitlement, refresh the license, restart the app
+- **Escalate if:** the entitlement shows active but the app still reports expired
+
+## General application exception
+- **Likely cause:** unknown, needs more logs
+- **Steps:** collect the full log, note the repro steps, check the version
+- **Escalate if:** it is reproducible, with the logs attached
